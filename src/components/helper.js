@@ -81,7 +81,7 @@ export function getPortfolios(){
         },
 
         {
-            "name": "Sana Saeed",
+            "name": "Sana Alhalabi",
             "role": "Leader",
             "avatar": "images/Mask-group1.svg"
         }
