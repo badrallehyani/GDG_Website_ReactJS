@@ -31,3 +31,63 @@ export function getDepartments() {
         }
     ]
 }
+
+export function getWorkshops(){
+    return [
+		{
+			title: 'Flutter Mastery',
+			description: 'Learning the basics of app development and fast paced components.',
+			time: '3pm',
+			date: '7th of January',
+			iconURL: "/images/jj.svg"
+		},
+		{
+			title: 'Flutter Mastery',
+			description: 'Learning the basics of app development and fast paced components.',
+			time: '3pm',
+			date: '7th of January',
+			iconURL: "/images/react.svg"
+		},
+		{
+			title: 'Flutter Mastery',
+			description: 'Learning the basics of app development and fast paced components.',
+			time: '3pm',
+			date: '7th of January',
+			iconURL: "/images/git.svg"
+		},
+		{
+			title: 'Flutter Mastery',
+			description: 'Learning the basics of app development and fast paced components.',
+			time: '3pm',
+			date: '7th of January',
+			iconURL: "/images/jj.svg"
+		},
+		{
+			title: 'Flutter Mastery',
+			description: 'Learning the basics of app development and fast paced components.',
+			time: '3pm',
+			date: '7th of January',
+			iconURL: "/images/git.svg"
+		},
+	]
+}
+
+export function getPortfolios(){
+    return [
+        {
+            "name": "Assem Emad",
+            "role": "Leader",
+            "avatar": "images/Mask-group.svg"
+        },
+
+        {
+            "name": "Sana Saeed",
+            "role": "Leader",
+            "avatar": "images/Mask-group1.svg"
+        }
+    ]
+}
+
+export function sendContactUs(name, email, message) {
+    alert(`Name: ${name}, Email: ${email}, Message: ${message}`);
+}

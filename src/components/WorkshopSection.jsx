@@ -1,45 +1,10 @@
 import React from 'react';
 import WorkshopsSwiper from './smaller_components/WorkshopsSwiper';
+import { getWorkshops } from './helper';
 
 function WorkshopSection() {
 
-	const workshops = [
-		{
-			title: 'Flutter Mastery',
-			description: 'Learning the basics of app development and fast paced components.',
-			time: '3pm',
-			date: '7th of January',
-			iconURL: "/images/jj.svg"
-		},
-		{
-			title: 'Flutter Mastery',
-			description: 'Learning the basics of app development and fast paced components.',
-			time: '3pm',
-			date: '7th of January',
-			iconURL: "/images/react.svg"
-		},
-		{
-			title: 'Flutter Mastery',
-			description: 'Learning the basics of app development and fast paced components.',
-			time: '3pm',
-			date: '7th of January',
-			iconURL: "/images/git.svg"
-		},
-		{
-			title: 'Flutter Mastery',
-			description: 'Learning the basics of app development and fast paced components.',
-			time: '3pm',
-			date: '7th of January',
-			iconURL: "/images/jj.svg"
-		},
-		{
-			title: 'Flutter Mastery',
-			description: 'Learning the basics of app development and fast paced components.',
-			time: '3pm',
-			date: '7th of January',
-			iconURL: "/images/git.svg"
-		},
-	]
+	const workshops = getWorkshops();
 
 	return (
 		<section class="workshops-section">
@@ -64,7 +29,7 @@ function WorkshopSection() {
 
 						<div class="swiper mySwiper ffs">
 
-								<WorkshopsSwiper workshops={workshops} />
+							<WorkshopsSwiper workshops={workshops} />
 
 						</div>
 					</div>

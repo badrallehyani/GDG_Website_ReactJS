@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { getDepartments } from "./helper";
 
 function DepartmentSection() {
-	const [activeButtonIndex, setActiveButtonIndex] = useState(0);
-	
+
 	const changeActive = (e) => {
 		const id = e.target.id;
 		setActiveButtonIndex(id)
@@ -12,6 +11,7 @@ function DepartmentSection() {
 
 	const departments = getDepartments();
 	const [currentDepartment, setCurrentDepartment] = useState(departments[0]);
+	const [activeButtonIndex, setActiveButtonIndex] = useState(0);
 
 	return (
 		<section class="tab-section">
@@ -44,7 +44,7 @@ function DepartmentSection() {
 									<ul>
 
 										{
-											currentDepartment.items.map(item=>
+											currentDepartment.items.map(item =>
 												<li>{item}</li>
 											)
 										}
@@ -55,13 +55,13 @@ function DepartmentSection() {
 						</div>
 						<div class="tab-buttons-container">
 							{
-								departments.map((department, i)=>
-									<button 
-									onClick={changeActive} 
-									id={i} 
-									className={"tab-but " + (activeButtonIndex == i ? "active-but" : "")}>
-									{department.name}
-								</button>
+								departments.map((department, i) =>
+									<button
+										onClick={changeActive}
+										id={i}
+										className={"tab-but " + (activeButtonIndex == i ? "active-but" : "")}>
+										{department.name}
+									</button>
 								)
 							}
 						</div>
